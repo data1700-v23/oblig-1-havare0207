@@ -4,7 +4,7 @@ OsloMet brukernavn: s375084
 
 GitHub brukernavn: havare0207
 
-Github repo URL: 
+Github repo URL: https://github.com/data1700-v23/oblig-1-havare0207.git
 
 Fullt navn: Håvard Elgsaas
 
