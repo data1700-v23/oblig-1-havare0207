@@ -4,6 +4,7 @@ let orderHistory = [];
 
 function kjopbillett() {
 
+
     <!--event.preventDefault();-->
 
     <!--Henter verdiene av variablene fra htmlfilen-->
