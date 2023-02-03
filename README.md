@@ -1,8 +1,8 @@
 Oblig 1
 =======
-OsloMet brukernavn: 
+OsloMet brukernavn: s375084
 
-GitHub brukernavn: 
+GitHub brukernavn: havare0207
 
 Github repo URL: 
 
