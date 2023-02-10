@@ -16,6 +16,17 @@ function kjopbillett() {
     const email = document.getElementById("email").value;
     const terms = document.getElementById("terms").checked;
 
+    //Etter det er registrert en bestilling skal alle inputfelt "blankes"
+    // slik at en ny billett kan registreres.
+    document.getElementById("film").value = "";
+    document.getElementById("ticketCount").value = "";
+    document.getElementById("firstName").value = "";
+    document.getElementById("lastName").value = "";
+    document.getElementById("phoneNumber").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("terms").checked = false;
+
+
     <!--Skriver ut en alertmelding om et av feltene står tomme-->
 
     if (!film) {
