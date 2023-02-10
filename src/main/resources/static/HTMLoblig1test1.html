@@ -2,38 +2,57 @@
 
 <body>
 <h1> Bestilling av kinobilletter</h1>
-<table>
 
+<!-- For style av tabellen under antall billetter-->
+<style>
+    .Antall billetter {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .Antall billetter > td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    .Antall billetter > tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+</style>
+
+<table>
     <tr>
         <td> <label for="film">Velg en film: </label></td>
         <td> <select id="film">
             <!--Mulighet til å velge mellom 3 filmer-->
             <option value = ""> Velg film her </option>
-            <option value="Avatar">Avatar</option>
-            <option value="Lord of The Rings: Ringenes Brorskap">Lord of The Rings: Ringenes Brorskap</option>
-            <option value="Harry Potter og De Vises Stein">Harry Potter og De Vises Stein</option>
+            <option value="Avatar: The Way of Water">Avatar: The Way of Water</option>
+            <option value="Antman and the Wasp: Quantumania">Antman and the Wasp: Quantumania</option>
+            <option value="Pus med stovler: Et siste onske">Pus med stovler: Et siste onske</option>
         </select>
         </td>
-        <td><label id="feilmeldingfilm"style = "color: red"></label></td>
+        <td><label id="feilmeldingfilm" style = "color: red"></label></td>
         </tr>
 
     <!--Mulighet til å velge antall billetter-->
     <tr><td> <label for="ticketCount">Antall billetter:</label> </td>
         <td> <input type = "number" id="ticketCount" /> </td>
-        <td id="feilmeldingticketCount"style = "color: red"></td>
+        <td id="feilmeldingticketCount" style = "color: red"></td>
     </tr>
 
     <!--Skrive inn navn-->
 <tr>
     <td><label for="firstName">Fornavn:</label></td>
     <td><input type = "text" id = "firstName" /></td>
-    <td> <label id="feilmeldingfirstName"style = "color: red"></label></td>
+    <td> <label id="feilmeldingfirstName" style = "color: red"></label></td>
 </tr>
 
     <!--Skrive inn etternavn-->
 <tr> <td><label for="lastName"> Etternavn:</label>  </td>
      <td><input type="text" id="lastName" /></td>
-     <td > <label id="feilmeldinglastName"style = "color: red"></label> </td>
+     <td > <label id="feilmeldinglastName" style = "color: red"></label> </td>
 </tr>
 
     <!--Skrive inn telefonnr-->
@@ -51,9 +70,10 @@
 </tr>
 </table>
 
-    <!--Avkrysningsboks for å akseptere vilkaar og beingelser for kjop av billetter-->
+    <!--Ekstra: Avkrysningsboks for å akseptere vilkaar og beingelser for kjop av billetter-->
 <input type="checkbox" id="terms"/>
-<label for="terms">Jeg godtar vilkaarene og betingelsene for kjop av billetter hos HEKINO</label>
+<label for="terms">Jeg godtar vilkaarene og betingelsene for kjop av billetter hos HEKINO. Maa krysses av.</label>
+<label id="feilmeldingterms" style = "color: red"> </label>
 
 <br>
   <!--Knapp for å registrere kjøp-->

@@ -62,6 +62,7 @@ function kjopbillett() {
     else if (ticketCount) {
         document.getElementById("feilmeldingticketCount").innerHTML = "";
     }
+
     if (!terms) {
         //document.getElementById("feilmeldingterms").style.color = "red";
         document.getElementById("feilmeldingterms").innerHTML = "Kryss av for aa aksemptere vilkaarene og beingelsene vaare";
