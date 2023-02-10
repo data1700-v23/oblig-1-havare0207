@@ -86,7 +86,6 @@ function kjopbillett() {
             orderHistory.push(order);
         }
 
-
         let ut = "<table><tr><th> Film </th><th> Antall </th><th>Fornavn</th><th>Etternavn</th><th>Telefonnr</th><th>Epost</th></tr>"
         for (let order of orderHistory) {
             ut += "<tr><td>" + order.film + "</td><td>" + order.ticketCount + "</td><td>" + order.firstName + "</td><td>" + order.lastName + "</td><td>" + order.phoneNumber + "</td><td>" + order.email + "</td></tr>"
