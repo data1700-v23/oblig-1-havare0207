@@ -55,9 +55,9 @@ function kjopbillett() {
     else if (email) {
         document.getElementById("feilmeldingemail").innerHTML = "";
     }
-    if (!ticketCount) {
+    if (!ticketCount || ticketCount <= 0) {
         //document.getElementById("feilmeldingticketCount").style.color = "red";
-        document.getElementById("feilmeldingticketCount").innerHTML = "Fyll inn antall billetter";
+        document.getElementById("feilmeldingticketCount").innerHTML = "Fyll inn antall billetter. Antallet maa vaere mer enn 0";
     }
     else if (ticketCount) {
         document.getElementById("feilmeldingticketCount").innerHTML = "";
@@ -82,7 +82,7 @@ function kjopbillett() {
         };
 
         <!--Legger til elementet til slutten av arrayet kalt orderHistory-->
-        if (film && firstName && lastName && phoneNumber && email && ticketCount && terms) {
+        if (film && firstName && lastName && phoneNumber && email && ticketCount > 0 && terms) {
             orderHistory.push(order);
         }
 
