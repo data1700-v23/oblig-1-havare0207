@@ -119,7 +119,7 @@ function slettalle(){
     };
 
     i = 0;
-    while (i < orderHistory.length){
+    while (i  <  orderHistory.length){
         orderHistory.pop(order); //husk at pop brukes for å fjerne elementer fra arrays, mens
         //push brukes for å legge til elementer i arrays.
     }
